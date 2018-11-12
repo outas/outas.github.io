@@ -148,7 +148,7 @@
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
     leancloud: {
-      enable: true,
+      enable: false,
       appID: 'UIax3nfiG7SlpKh9M6k9MIoA-gzGzoHsz',
       appKey: 't6uQQ3cgQRmXVsXcJLsXVUjF'
     },
@@ -465,17 +465,6 @@
 
           
           
-             <span id="/1/" class="leancloud_visitors" data-flag-title="世界，你好！">
-               <span class="post-meta-divider">•</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
 
           
 
@@ -574,28 +563,6 @@
 
 
 
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-  
-  
-  <script type="text/javascript">
-    var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item=>{
-    return GUEST.indexOf(item)>-1;
-    });
-    new Valine({
-        el: '#comments' ,
-        verify: false,
-        notify: false,
-        appId: 'UIax3nfiG7SlpKh9M6k9MIoA-gzGzoHsz',
-        appKey: 't6uQQ3cgQRmXVsXcJLsXVUjF',
-        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
-        avatar:'mm',
-        guest_info:guest,
-        pageSize:'10' || 10,
-    });
-  </script>
 
 
 
