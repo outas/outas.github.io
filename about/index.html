@@ -456,19 +456,26 @@
 
 
 
-
-  
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//cdn.jsdelivr.net/gh/xcss/valine@v1.1.7-rc3/dist/Valine.min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+
   <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+    return GUEST.indexOf(item)>-1;
+    });
     new Valine({
-        av: AV,
         el: '#comments' ,
         verify: false,
         notify: false,
-        app_id: 'UIax3nfiG7SlpKh9M6k9MIoA-gzGzoHsz',
-        app_key: 't6uQQ3cgQRmXVsXcJLsXVUjF',
-        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!'
+        appId: 'UIax3nfiG7SlpKh9M6k9MIoA-gzGzoHsz',
+        appKey: 't6uQQ3cgQRmXVsXcJLsXVUjF',
+        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
     });
   </script>
 

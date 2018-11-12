@@ -394,11 +394,11 @@
         
           <p>你可能需要：</p>
 <ul>
-<li><p><a href="https://diygod.me">返回首页</a></p>
+<li><p><a href="https://diygod.me" target="_blank" rel="noopener">返回首页</a></p>
 </li>
-<li><p><a href="https://diygod.me/archives/">所有文章</a></p>
+<li><p><a href="https://diygod.me/archives/" target="_blank" rel="noopener">所有文章</a></p>
 </li>
-<li><p><a href="https://diygod.me/message/">给我留言</a></p>
+<li><p><a href="https://diygod.me/message/" target="_blank" rel="noopener">给我留言</a></p>
 </li>
 <li><p>搜索文章：右上角</p>
 </li>
@@ -451,6 +451,28 @@
 
 
 
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+    return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'UIax3nfiG7SlpKh9M6k9MIoA-gzGzoHsz',
+        appKey: 't6uQQ3cgQRmXVsXcJLsXVUjF',
+        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
