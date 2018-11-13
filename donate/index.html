@@ -151,9 +151,9 @@
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
     leancloud: {
-      enable: false,
-      appID: '',
-      appKey: ''
+      enable: true,
+      appID: 'UIax3nfiG7SlpKh9M6k9MIoA-gzGzoHsz',
+      appKey: 't6uQQ3cgQRmXVsXcJLsXVUjF'
     },
     favicon: {
       visibilitychange: true,
@@ -192,7 +192,7 @@
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'd2adc7115282393fe78e58cc062057d6', 'auto');
+  ga('create', 'UA-129159088-1', 'auto');
   ga('send', 'pageview');
 </script>
 
@@ -229,35 +229,6 @@
         </li>
       
         
-        <li class="menu-item menu-item-抓到我">
-          <a href="javascript:;" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-sign-language"></i> <br>
-            
-            抓到我
-          </a>
-          
-            <ul class="submenu submenu-抓到我">
-              
-                
-                <li class="submenu-item submenu-item-github">
-                  <a href="https://github.com/DIYgod" rel="section" target="_blank">
-                    GitHub
-                  </a>
-                </li>
-              
-                
-                <li class="submenu-item submenu-item-qq-群">
-                  <a href="/images/qq-g.jpg" rel="section" target="_blank">
-                    QQ 群
-                  </a>
-                </li>
-              
-            </ul>
-          
-        </li>
-      
-        
         <li class="menu-item menu-item-归档">
           <a href="/archives/" rel="section">
             
@@ -269,23 +240,12 @@
         </li>
       
         
-        <li class="menu-item menu-item-投喂">
-          <a href="/donate/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-cutlery"></i> <br>
-            
-            投喂
-          </a>
-          
-        </li>
-      
-        
-        <li class="menu-item menu-item-后宫">
+        <li class="menu-item menu-item-友链">
           <a href="/friends/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-mars"></i> <br>
             
-            后宫
+            友链
           </a>
           
         </li>
@@ -429,7 +389,9 @@
 
   
     <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MDk1Mi8xNzQ3Nw"></div>
     </div>
+
   
 
 
@@ -454,8 +416,17 @@
 
 
   
-
-
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
 
 
 
@@ -467,26 +438,6 @@
   <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
   
   
-  <script type="text/javascript">
-    var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item=>{
-    return GUEST.indexOf(item)>-1;
-    });
-    new Valine({
-        el: '#comments' ,
-        verify: false,
-        notify: false,
-        appId: 'UIax3nfiG7SlpKh9M6k9MIoA-gzGzoHsz',
-        appKey: 't6uQQ3cgQRmXVsXcJLsXVUjF',
-        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
-        avatar: 'mm',
-        guest_info: guest,
-        pageSize: '10' || 10,
-        visitor: true,
-    });
-  </script>
-
 
 
 
